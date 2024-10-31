@@ -1,0 +1,49 @@
+# SHELL
+alias c="clear"
+alias x="exit"
+alias r="exec ${SHELL} -l"
+alias b="btop"
+alias ss="cmatrix"
+alias aa="v ~/.arch-dotfiles/zshrc/.alias"
+
+# TMUX
+alias t="tmux"
+alias ta="t attach -t"
+alias td="t detach"
+alias tl="t ls"
+alias tn="t new -s"
+alias tk="t kill-session -t"
+
+# ALIAS
+alias chrome="google-chrome-stable & disown"
+alias spotify="spotify-launcher & disown"
+alias discord="discord & disown"
+alias slack="slack & disown"
+alias v="vim"
+
+# MACHINES
+alias prometheus="ssh prometheus"
+alias alien="ssh alien"
+alias truenas="ssh truenas"
+
+# SPEEDTEST
+alias speed="speedtest --secure"
+
+# GIT
+alias gll="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gsl="git stash list"
+alias gs="git status"
+alias gc="git commit"
+alias gd="git diff"
+alias gfo="git fetch origin"
+alias gpom="git pull origin main"
+alias gpo="git pull origin"
+alias lg="lazygit"
+
+# DOCKER
+alias dps='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.RunningFor}}\t{{.Status}}"'
+alias dpa='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.RunningFor}}\t{{.Status}}"'
+alias dcu='docker compose up'
+alias dcd='docker compose down --remove-orphans'
+alias di='docker images'
+alias ddf='docker system df'

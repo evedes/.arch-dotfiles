@@ -10,6 +10,10 @@ alias ls="ls --color"
 alias l="ls -ahl"
 alias ll="ls -l"
 
+# SCREENSAVER
+alias m="cmatrix -s"
+alias mb="cmatrix -s -C blue"
+
 # TMUX
 alias t="tmux"
 alias ta="t attach -t"
@@ -18,15 +22,12 @@ alias tl="t ls"
 alias tn="t new -s"
 alias tk="t kill-session -t"
 
-# NEOVIM
-alias v="nvim"
-
 # ALIAS
 alias chrome="google-chrome-stable & disown"
 alias spotify="spotify-launcher & disown"
 alias discord="discord & disown"
 alias slack="slack & disown"
-alias v="vim"
+alias v="nvim"
 
 # MACHINES
 alias prometheus="ssh prometheus"

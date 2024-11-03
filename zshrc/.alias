@@ -5,6 +5,10 @@ alias r="exec ${SHELL} -l"
 alias b="btop"
 alias ss="cmatrix -s"
 alias aa="v ~/.arch-dotfiles/zshrc/.alias"
+alias zz="v ~/.zshrc"
+alias ls="ls --color"
+alias l="ls -ahl"
+alias ll="ls -l"
 
 # TMUX
 alias t="tmux"
@@ -13,6 +17,9 @@ alias td="t detach"
 alias tl="t ls"
 alias tn="t new -s"
 alias tk="t kill-session -t"
+
+# NEOVIM
+alias v="nvim"
 
 # ALIAS
 alias chrome="google-chrome-stable & disown"

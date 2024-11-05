@@ -2,30 +2,37 @@
     border: none;
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font";
-    font-size: 13px;
+    font-size: 15px;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0.9);
-    color: #cdd6f4;
+    background: rgba(0, 0, 0, 0.7);
+    color: #7EB3C9;
 }
 
 #workspaces button {
-    padding: 5px;
-    color: #313244;
-    margin-right: 5px;
+    margin: 10px 10px;
+    color: #7EB3C9;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #7EB3C9;
     background: #313244;
     border-radius: 10px;
 }
 
-#clock,
-#battery,
-#pulseaudio,
-#network {
+#mediaplayer {
     padding: 0 10px;
+    margin: 0 4px;
+    color: #b4befe;
+}
+
+#clock,
+#pulseaudio,
+#cpu,
+#disk,
+#tray,
+#network {
+    padding: 0 15px;
 }

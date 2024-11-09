@@ -63,3 +63,10 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 # SHELL INTEGRATIONS
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# fnm
+FNM_PATH="/home/edo/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/edo/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi

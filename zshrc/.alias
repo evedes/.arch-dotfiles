@@ -9,6 +9,11 @@ alias zz="v ~/.zshrc"
 alias ls="ls --color"
 alias l="ls -ahl"
 alias ll="ls -l"
+alias y="yazi"
+
+# HYRPRLAND
+alias rwaybar="killall waybar && waybar & disown"
+alias rpaper="killall hyprpaper && hyprpaper & disown"
 
 # SCREENSAVER
 alias m="cmatrix -s"

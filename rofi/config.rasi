@@ -1,34 +1,17 @@
 configuration {
-    /* Basic Settings */
-    modes: "drun,run,window,ssh";
-    font: "JetBrainsMono Nerd Font 16";
+    modes: "drun";
+    font: "JetBrainsMono Nerd Font 14";
     fixed-num-lines: true;
     show-icons: true;
-    icon-theme: "Papirus";
 
-    /* Window Settings */
-    width: 45;
-    lines: 12;
-    columns: 1;
-
-    /* Application Search Settings */
-    drun-match-fields: "name,generic,exec,categories,keywords";
-    drun-display-format: "{name} [<span foreground='#dcd7ba'><i>({generic})</i></span>]";
-    drun-show-actions: true;
-    drun-url-launcher: "xdg-open";
-
-    /* Behavior */
     sort: true;
     sorting-method: "fzf";
     case-sensitive: false;
     cycle: true;
-    sidebar-mode: true;
 
-    /* History */
     disable-history: false;
     max-history-size: 50;
 
-    /* Misc */
     timeout {
         action: "kb-cancel";
         delay:  0;
@@ -43,4 +26,4 @@ configuration {
     kb-remove-char-back: "BackSpace";
 }
 
-@theme "kanagawa"
+@theme "arch-theme"

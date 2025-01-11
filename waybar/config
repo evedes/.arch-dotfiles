@@ -5,9 +5,14 @@
     "reload_style_on_change": true, // Only CSS Styles
 
     "output": "DP-1",
-    "modules-left": ["custom/arch", "custom/separator", "hyprland/workspaces"],
+    "modules-left": ["custom/arch", "custom/separator", "hyprland/workspaces", "tray"],
     "modules-center": [],
     "modules-right": ["cpu#percentage","custom/separator", "memory","custom/separator", "disk#root", "disk#home","custom/separator", "network", "custom/separator", "custom/ping", "custom/separator", "pulseaudio","custom/separator", "clock"],
+
+    "tray": {
+      "icon-size": 18,
+      "spacing": 10
+    },
 
     "custom/separator": {
       "format": "•",

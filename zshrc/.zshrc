@@ -57,7 +57,7 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# COMPLETION STYLING 
+# COMPLETION STYLING
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
@@ -67,14 +67,14 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-# fnm
+# FNM
 FNM_PATH="/home/edo/.local/share/fnm"
 if [ -d "$FNM_PATH" ]; then
   export PATH="/home/edo/.local/share/fnm:$PATH"
   eval "`fnm env`"
 fi
 
-# To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
+# P10K
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
 
 PATHS_PATH="/home/edo/.arch-dotfiles/zshrc/.path"

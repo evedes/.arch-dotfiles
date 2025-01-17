@@ -10,6 +10,7 @@ alias ls="ls --color"
 alias l="ls -ahl"
 alias ll="ls -l"
 alias y="yazi"
+alias path="echo $PATH | tr ':' '\n' | nl"
 
 # HYRPRLAND
 alias rwaybar="killall waybar && waybar & disown"
@@ -37,6 +38,7 @@ alias v="nvim"
 # MACHINES
 alias rubik='ssh rubik'
 alias prometheus='ssh prometheus'
+alias truenas="ssh truenas"
 alias alien='ssh alien'
 alias vedesvps='ssh -i ~/.ssh/id_ed25519_vedesvps edo@vedesvps'
 alias thestarter='ssh -i ~/.ssh/id_ed25519_thestarter thestarter@thestarter'

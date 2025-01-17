@@ -1,6 +1,6 @@
 configuration {
     modes: "drun";
-    font: "JetBrainsMono Nerd Font 14";
+    font: "BerkeleyMono 14";
     fixed-num-lines: true;
     show-icons: true;
 

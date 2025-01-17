@@ -5,14 +5,17 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# ALIAS
-source $HOME/.arch-dotfiles/zshrc/.alias
-
 # ZINIT
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
-[ ! -d $ZINIT_HOME/.git ] && git clone git@github.com:dharma-continuum/zinit.git "$ZINIT_HOME"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
+
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# ALIAS
+source $HOME/.arch-dotfiles/zshrc/.alias
 
 # ZSH PLUGINS
 zinit light zsh-users/zsh-syntax-highlighting
@@ -73,3 +76,8 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
+
+PATHS_PATH="/home/edo/.arch-dotfiles/zshrc/.path"
+[[ -f "$PATHS_PATH" ]] && source "$PATHS_PATH"
+
+export TERM=xterm-kitty

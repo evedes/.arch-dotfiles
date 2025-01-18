@@ -77,7 +77,7 @@ fi
 # P10K
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
 
-PATHS_PATH="/home/edo/.arch-dotfiles/zshrc/.path"
-[[ -f "$PATHS_PATH" ]] && source "$PATHS_PATH"
 
-export TERM=xterm-kitty
+[[ -f "$PATHS_PATH" ]] && source "$PATHS_PATH"
+source $HOME/.arch-dotfiles/zshrc/.path
+

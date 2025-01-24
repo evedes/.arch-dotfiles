@@ -1,5 +1,21 @@
+# main
 font-family = "Berkeley Mono"
 font-size = 16
+shell-integration-features = no-cursor,sudo,no-title
 adjust-cell-height = 30%
 theme = "Kanagawa Dragon"
-background-opacity = 0.95
+background-opacity = 0.92
+
+# mouse
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+# window
+window-padding-balance = true
+window-save-state = always
+
+# keybindings
+keybind = ctrl+s>r=reload_config
+
+# other
+copy-on-select = clipboard

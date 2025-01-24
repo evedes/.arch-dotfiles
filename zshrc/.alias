@@ -11,6 +11,7 @@ alias l="ls -ahl"
 alias ll="ls -l"
 alias y="yazi"
 alias path="echo $PATH | tr ':' '\n' | nl"
+alias mvv="v ~/Nextcloud/Multiverse/"
 
 # HYRPRLAND
 alias rwaybar="killall waybar && waybar & disown"
